@@ -68,7 +68,7 @@ const CategorizationQuestion = () => {
 
     console.log("Data to save:", dataToSave);
     axios
-      .post("https://superbackend-alpha.vercel.app/question", { categories: dataToSave })
+      .post("https://superbackend-c4ew.onrender.com/question", { categories: dataToSave })
       .then((response) => {
         alert("Data saved successfully!");
         console.log(response.data);

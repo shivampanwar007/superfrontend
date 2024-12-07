@@ -49,7 +49,7 @@ const Comprehension = () => {
     const { passage, questions, userAnswers } = state;
 
     try {
-      const response = await fetch("https://superbackend-alpha.vercel.app/questionss/save", {
+      const response = await fetch("https://superbackend-c4ew.onrender.com/questionss/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const Comprehension = () => {
 
   const fetchComprehensions = async () => {
     try {
-      const response = await fetch("https://superbackend-alpha.vercel.app/questionss/save");
+      const response = await fetch("https://superbackend-c4ew.onrender.com/questionss/save");
       const data = await response.json();
       if (response.ok) {
         setState({ ...state, savedComprehensions: data });
